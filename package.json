@@ -1,0 +1,16 @@
+{
+  "name" : "packet",
+  "version" : "0.0.1",
+  "author"  : "August Home, Inc",
+  "main"    : "./build/Release/packet.node",
+  "description" : "Example node.js add-on using buffers",
+  "repository": {
+    "type": "git",
+    "url": " git@bitbucket.org:cdow/packet.git"
+  },  
+  "config"  : {"native" : false},
+  "email"   : "info@august.com",
+  "private" : false,
+  "scripts" : {"install" : "(node-gyp configure build 2> builderror.log) || (exit 0)"},
+  "files"   : ["package.json", "packet.cc", "binding.gyp"]
+}
